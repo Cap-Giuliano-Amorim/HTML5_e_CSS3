@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /* --cor1: white;
+    --cor2: #1A5C38;  */
+    --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontDestaque: 'Bebas Neue', cursive;
+
+}
+/* Fiz esse desafio antes de aprender esse conhecimento sobre variáveis, logo, na epoca não utilizei. Coloquei somente para fins didáticos, bem como acrescentei algumas coisa que estavam faltando. */
+
+body {
+    background-color: rgba(170, 243, 170, 0.863);
+    text-align: center;
+    font-family: var(--fontePadrao);
+}
+
+/* a.externo::after {
+    content: '\00A0\1F517';
+} */
+
+header {
+    min-height: 130px;
+    background-image: linear-gradient(to bottom, #3DDB83, #154C2E);
+    padding-top: 10px;
+    color: white;
+    /* color: var(--cor1); */
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fontDestaque);
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+    font-weight: normal;
+}
+
+header > p {
+    font-family: var(--fontePadrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+}
+
+p {
+    padding: 20px 0px;
+    text-align: justify;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+nav {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /* color: var(--cor1); */
+}
+
+nav > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: #2FA866;
+    color: #154C2E;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main strong {
+    color: #1A5C38;
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #3DDB83;
+    padding: 4px 6px;
+    color: #081d11;
+}
+
+main h2 {
+    font-weight: normal;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+section {
+    background-color: white;
+    padding: 20px 10px 0px 10px;
+}
+
+h1#tituloAndroid {
+    font-family: 'idroid';
+    color: #276643;
+    text-align: left;
+}
+
+.textoAndroid {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.tituloSecundario {
+    background-image: linear-gradient(to right, #82B399, white);
+    text-align: left;
+    font-family: 'idroid';
+    color: #276643;
+}
+
+aside#video {
+    background-color: #1A5C38;
+    /* background-color: var(--cor2); */
+    height: 330px;
+    padding-top: 15px;
+    position: relative;
+}
+
+aside#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+section#informacoesComplementares {
+    margin: 0px;  
+}
+
+aside#complementos {
+  width: 98%;
+  height: 90%;
+  background-color: #C5EBD6;
+  border-radius: 10px
+}
+
+h3 {
+    color: white;
+    text-align: left;
+    background-color: #1A5C38;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+section#informacoesComplementares > aside#complementos > ul {
+    display: inline-block;
+    text-align: justify;
+    list-style-image: url('./imagens/checked2.png');
+    list-style-position: inside;
+    columns: 2;
+    /* list-style-type: '\2714\00A0\00A0'; */
+}
+
+
+section#informacoesComplementares > aside#complementos > p.textoAndroid2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+footer {
+    /* margin-top: 15px; */
+    background-color: #1A5C38;
+    color: white;
+    font-size: 0.8em;
+}
+
+footer > p {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #3DDB83;
+}
